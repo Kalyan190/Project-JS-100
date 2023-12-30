@@ -61,6 +61,7 @@ trig.addEventListener("keydown", function (e){
 searchbtn.addEventListener('click', ()=>{
       CheckWether(searchBox.value);
       searchBox.value = '';
+      setloader();
 })
 
 const loader = document.querySelector(".loader");
