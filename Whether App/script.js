@@ -54,11 +54,13 @@ trig.addEventListener("keydown", function (e){
             console.log("succesfully");
             CheckWether(searchBox.value);
             setloader();
+            searchBox.value = '';
        }
 })
 
 searchbtn.addEventListener('click', ()=>{
       CheckWether(searchBox.value);
+      searchBox.value = '';
 })
 
 const loader = document.querySelector(".loader");
