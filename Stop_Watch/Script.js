@@ -1,6 +1,6 @@
-let seconds = 00;
-let tens = 00;
-let mins = 00;
+let seconds = 0;
+let tens = 0;
+let mins = 0;
 let getSeconds = document.querySelector('.second');
 let getTens = document.querySelector('.mili');
 let getMins = document.querySelector('.min');
@@ -12,12 +12,15 @@ let interval;
 btnStart.addEventListener('click', () => {
     clearInterval(interval);
     inverval = setInterval(startTimer, 10);
+    console.log("start");
 })
 btnStop.addEventListener('click', () => {
     clearInterval(inverval);
+    console.log("stop");
 })
 btnReset.addEventListener('click', () => {
     clearInterval(inverval);
+    console.log("reset");
     tens = '00';
     seconds = '00';
     mins = '00';

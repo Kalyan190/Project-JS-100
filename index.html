@@ -12,6 +12,9 @@
             margin: 0;
             font: normal 75% Arial, Helvetica, sans-serif;
       }
+      body::-webkit-scrollbar{
+            display: none;
+      }
 
       canvas {
             display: block;
@@ -22,7 +25,7 @@
       #particles-js {
             position: absolute;
             width: 100%;
-            height: 100vh;
+            height:100vh;
             background-color: #dae7ea;
             /* background-image: url(""); */
             /* background-repeat: no-repeat; */
@@ -78,6 +81,25 @@
             text-align: center;
             color: rgb(3, 3, 43);
         }
+
+        @media (max-width:800px) {
+            #particles-js{
+                  height: 200vh;
+                  background-color: aqua;
+            }
+            
+        }
+        @media (max-width:500px) {
+            #particles-js{
+                  height: 200vh;
+                  background-color: rgb(13, 108, 108);
+            }
+            a h3{
+            color: rgb(241, 241, 245);
+        }
+
+            
+        }
       
 </style>
 
@@ -97,6 +119,14 @@
                       <h3><span>Demo APP</span></h3>
                   </div>
                   </a>
+
+                  <a href="Stop_Watch/Index.html">
+                        <div class="card">
+                            <img src="Whether App/images/stop_watch.png" alt="Stop_Watch">
+                          
+                            <h3><span>Demo APP</span></h3>
+                        </div>
+                        </a>
       
 
       
