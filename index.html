@@ -1,56 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100-JS-Project</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
 </head>
-    <style>
-        *{
+<style>
+      /* ---- reset ---- */
+      body {
             margin: 0;
-            padding: 0;
-            outline: 0;
-            box-sizing: border-box;
-            border: 0;
+            font: normal 75% Arial, Helvetica, sans-serif;
+      }
+
+      canvas {
+            display: block;
+           
+      }
+
+      /* ---- particles.js container ---- */
+      #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-color: #dae7ea;
+            /* background-image: url(""); */
+            /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+            /* background-position: 50% 50%; */
+      }
+
+      /* ---- stats.js ---- */
+      .count-particles {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            
+
+      }
+
+      #stats,
+      .count-particles {
+            -webkit-user-select: none;
+      }
+
+      #stats {
+            border-radius: 3px 3px 0 0;
+            overflow: hidden;
+      }
+
+      .count-particles {
+            border-radius: 0 0 3px 3px;
+
+      }
+
+      .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+
         }
+        .container a{
+            margin: 40px;
+            border-radius: 10px;
+        }
+        .card img{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+        }
+        a h3{
+            font-size: 30px;
+            text-align: center;
+            color: rgb(3, 3, 43);
+        }
+      
+</style>
 
+<body>
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
 
+      <!-- stats - count particles -->
+      <div class="count-particles">
+         
+
+            <div class="container">
+                  <a href="Whether App/index.html">
+                  <div class="card">
+                      <img src="Whether App/images/weather-demo.png" alt="weather-demo">
+                    
+                      <h3><span>Demo APP</span></h3>
+                  </div>
+                  </a>
       
 
+      
+                     
+      
+                  <!-- <a href="Task-1/index.html">
+                      <div class="card">
+                          <img src="imgs/task1.png" alt="todo-app">
+                          <h3>Task-1 &gt;&gt; <span>TODO WebApp</span></h3>
+                      </div>
+                  </a> -->
+      
+                 
+      
+                  
+              </div>
+           
+       </div>
        
 
-      
-
-      
 
 
-    </style>
-<body>
-    <div class="wrapper">
 
-        <div class="container">
-            <a href="Whether App/index.html">
-            <div class="card">
-              
-                <h3>&gt;&gt; <span>Weather App</span></h3>
-            </div>
-            </a>
 
-           
-
-               
-
-            <!-- <a href="Task-1/index.html">
-                <div class="card">
-                    <img src="imgs/task1.png" alt="todo-app">
-                    <h3>Task-1 &gt;&gt; <span>TODO WebApp</span></h3>
-                </div>
-            </a> -->
-
-           
-
-            
-        </div>
-    </div>
+      <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+      <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <!-- stats.js lib -->
+      <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+      <script src="script.js"></script>
 </body>
+
 </html>
