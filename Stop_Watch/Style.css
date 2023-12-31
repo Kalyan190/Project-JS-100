@@ -22,16 +22,18 @@
 
 }
 
-.wrapper p{
+.wrapper .circle{
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
     z-index: 9999;
     font-size: 48px;
     margin-bottom: 120px;
 }
 
-.wrapper p::before{
+.wrapper .circle::before{
     content: '';
     position: absolute;
     width: 250px;
@@ -39,8 +41,7 @@
     background-color: #151538;
     z-index: -1;
     border-radius: 50%;
-	left: -15%;
-    top: -180%;
+
     /* align-content: center; */
     
     animation-name: shine;
@@ -48,6 +49,7 @@
     animation-iteration-count: infinite;
     
 }
+
 
 @keyframes shine{
     0%,100%{
