@@ -56,3 +56,4 @@ function startTimer(){
         getSeconds.innerHTML = mins;
     }
 }
+// comment out 
