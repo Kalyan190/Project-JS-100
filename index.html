@@ -13,6 +13,7 @@
             width: 100vw;
             font: normal 75% Arial, Helvetica, sans-serif;
             overflow-x: hidden;
+            /* overflow-y: hidden; */
       }
       body::-webkit-scrollbar{
             display: none;
@@ -20,6 +21,7 @@
 
       canvas {
             display: block;
+            z-index: 10;
            
       }
 
@@ -33,6 +35,7 @@
             /* background-repeat: no-repeat; */
             /* background-size: cover; */
             /* background-position: 50% 50%; */
+           
       }
 
       /* ---- stats.js ---- */
@@ -46,10 +49,10 @@
 
       }
 
-      #stats,
+      /* #stats,
       .count-particles {
             -webkit-user-select: none;
-      }
+      } */
 
       #stats {
             border-radius: 3px 3px 0 0;
@@ -58,25 +61,33 @@
 
       .count-particles {
             border-radius: 0 0 3px 3px;
+            z-index: 1;
 
       }
 
       .container{
             display: flex;
-            width: 100%;
+            width: 80%;
+            max-height: 100vh;
             align-items: center;
             justify-content: space-around;
             flex-wrap: wrap;
+            overflow-x: hidden;
+      
 
 
+        }
+        .container::-webkit-scrollbar{
+            display: none;
         }
         .container a{
-            margin: 40px;
+            margin: 40px ;
             border-radius: 10px;
+            z-index: 10;
         }
         .card img{
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             border-radius: 20px;
         }
         a h3{
@@ -87,14 +98,14 @@
 
         @media (max-width:800px) {
             #particles-js{
-                  height: 200vh;
+                  /* height: 300vh; */
                   background-color: aqua;
             }
             
         }
         @media (max-width:500px) {
             #particles-js{
-                  height: 200vh;
+                  /* height: 300vh; */
                   background-color: rgb(13, 108, 108);
             }
             a h3{
@@ -130,6 +141,14 @@
                             <h3><span>Demo APP</span></h3>
                         </div>
                         </a>
+
+                        <a href="Notes App/index.html">
+                              <div class="card">
+                                  <img src="Whether App/images/NotesApp.png" alt="Stop_Watch">
+                                
+                                  <h3><span>Demo APP</span></h3>
+                              </div>
+                              </a>
       
 
       
