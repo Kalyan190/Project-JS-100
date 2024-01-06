@@ -1,0 +1,103 @@
+*{
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      box-sizing: border-box;
+      padding: 0;
+}
+
+.container{
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #17ddeb , #0a244b);
+      color: #fff;
+      padding: 30px;
+      overflow: hidden;
+
+}
+/* .container::-webkit-scrollbar{
+      display: none;
+} */
+
+.container h1{
+      display: flex;
+      align-items: center;
+      font-size: 35px;
+      font-weight: 600;
+      padding-left: 40px;
+}
+.container h1 img{
+      width: 60px;
+}
+.container button img{
+      width: 25px;
+      margin-right: 8px;
+      
+}
+.container button{
+      display: flex;
+      align-items: center;
+      background: linear-gradient(#9418fd,#571094);
+      color: #fff;
+      font-size: 16px;
+      outline: 0;
+      border: 0;
+      border-radius: 40px;
+      padding: 15px 25px;
+      margin: 30px 0 40px 40px;
+      cursor: pointer;
+      
+}
+.input-box{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 440px;
+      min-height: 100px;
+      max-height: 150px;
+      background: #fff;
+      color: #333;
+      padding: 5px 20px 20px 20px;
+      margin: 15px;
+      outline: none;
+      border-radius: 5px;
+      overflow-x: hidden;
+      
+}
+.input-box::-webkit-scrollbar{
+      display: none;
+}
+.input-box .write{
+      outline: none;
+}
+.input-box .heading{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 5px;
+      border-bottom: solid  #333;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 7px;
+      outline: none;
+}
+
+.input-box .heading img{
+      width: 25px;
+      cursor: pointer;
+
+}
+.notes{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-height: 360px;
+      overflow-x: hidden;
+
+}
+.notes::-webkit-scrollbar{
+      display: none;
+}
+
+
