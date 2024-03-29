@@ -207,19 +207,17 @@
         font-size: 1rem;
         font-weight: bold;
     }
-    .input-data{
-        text-align: center;
-        height: 40px;
-        width: 14rem;
-        background-color: rgb(250, 246, 240);
-        font-size: 1.5rem;
-        font-weight: bolder;
-        border: 3px solid red ;
-        border-radius: 5px ;
-        padding: 1.4rem;
+    .input-data[type="date"] {
+        /* Specify styles to ensure the input symbol is visible */
+        appearance: auto;
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 8px;
         cursor: pointer;
         color: black;
-    
     }
 
     
