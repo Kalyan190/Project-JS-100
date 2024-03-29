@@ -207,17 +207,16 @@
         font-size: 1rem;
         font-weight: bold;
     }
-    .input-data[type="date"] {
-        /* Specify styles to ensure the input symbol is visible */
-        appearance: auto;
-        -webkit-appearance: auto;
-        -moz-appearance: auto;
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 8px;
-        cursor: pointer;
+
+
+    
+    input::-webkit-datetime-edit, input::-webkit-inner-spin-button, input::-webkit-clear-button {
+        display: flex;
+    }
+    
+    input::-webkit-calendar-picker-indicator {
         color: black;
+        opacity: 1;
     }
 
     
