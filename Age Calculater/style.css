@@ -139,12 +139,13 @@
     height: 40px;
     width: 14rem;
     background-color: rgb(250, 246, 240);
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bolder;
     border: 3px solid red ;
     border-radius: 5px ;
     padding: 1.4rem;
     cursor: pointer;
+    color: black;
 
 }
 
@@ -174,7 +175,7 @@
     font-size: 20px;
     font-weight: bold;
     color: rgb(255, 254, 254);
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1rem;
     text-align: center;
 
@@ -201,6 +202,24 @@
     }
     .enter-input{
         gap: 0rem;  
+    }
+    #title #age{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .input-data{
+        text-align: center;
+        height: 40px;
+        width: 14rem;
+        background-color: rgb(250, 246, 240);
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border: 3px solid red ;
+        border-radius: 5px ;
+        padding: 1.4rem;
+        cursor: pointer;
+        color: black;
+    
     }
 
     
