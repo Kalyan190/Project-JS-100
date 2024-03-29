@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+           <div id="rotate">
+            <div id="title">
+                <div id="heading">Age Calculater</div>
+                <div class="inp">
+                    <div class="d">Date</div>
+                    <div class="d">Month</div>
+                    <div class="d">Year</div>
+                </div>
+                
+                <div class="enter-input">
+                    <div id="d1" >
+                        <input type="date" name="birthdate" id="birthdate" class="input-data" required="required" max="<?php echo date('Y-m-d'); ?>" onchange="calculateAge()">
+                    </div>
+                </div>
+                
+                <button id="btn" name="submit" value="submit" onclick="calculateAge()">Submit</button>
+                <div id="age"> </div>
+
+
+            </div>
+          </div> 
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

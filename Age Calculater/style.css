@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+
+}
+
+#wrapper{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 12, 31);
+}
+
+#container{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(11, 2, 2); */
+    color: aliceblue;
+    border-radius: 15px ;
+
+    
+}
+#rotate{
+	position: relative;
+	height: 510px;
+	width: 610px;
+	background-color: rgba(0 , 0 , 0 , 0.75);
+    border-radius: 20px;
+	display: flex;
+	place-content: center;
+	place-items: center;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+#rotate::after{
+	content: '';
+	position: absolute;
+	width: 600px;
+	height: 700px;
+    justify-content: center;
+    align-items: center;
+	background-image: conic-gradient(transparent,
+	transparent,transparent,#007bff);
+	animation: animate 4s linear infinite;
+	animation-delay: -2.8s;
+}
+
+#rotate::before{
+	content: '';
+	position: absolute;
+	width: 600px;
+	height: 700px;
+    justify-content: center;
+    align-items: center;
+	background-image: conic-gradient(transparent,
+	transparent,transparent,#0dff00);
+	animation: animate 4s linear infinite;
+}
+@keyframes animate {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+	
+}
+
+
+
+#rotate #title{
+	inset: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	border-radius: 15px;
+	background-color: #0c1022;
+	z-index: 1;
+    height: 500px;
+    width:  600px;
+    border-radius: 15px ;
+    color: rgb(241, 14, 14);
+
+}
+
+
+#title #heading{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 2rem;
+    text-align: center;
+    border-bottom: 4px solid;
+
+}
+.inp{
+    display: flex;
+    padding-top: 3rem;
+    gap: 2rem;
+}
+
+#title .d{
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    background-color: bisque;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 3px solid ;
+    border-radius: 5px;
+}
+
+.enter-input{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    place-content: center;
+    place-items: center;
+    
+}
+
+.input-data{
+    text-align: center;
+    height: 40px;
+    width: max-content;
+    background-color: rgb(250, 246, 240);
+    font-size: 25px;
+    font-weight: bolder;
+    border: 3px solid red ;
+    border-radius: 5px ;
+
+}
+
+
+
+#title #btn{
+    height: 40px;
+    width: 140px;
+    background-color: rgb(250, 246, 240);
+    font-size: 25px;
+    font-weight: bolder;
+    border: 3px solid ;
+    border-radius: 5px;
+    place-content: center;
+    place-items: center;
+    margin-top: 2rem;   
+}
+#title #btn:hover{
+    background-color: #0dff00;
+    cursor: pointer;
+}
+
+
+#title #age{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 254, 254);
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #rotate{
+	    width: 310px;
+        height: 420px
+    }
+    #rotate::after{
+        width: 410px;
+    }
+    #rotate::before{
+        width: 410px;
+    }
+    #rotate #title{
+        max-width: 300px;
+        max-height: 410px;
+    }
+    .inp{
+        gap: 0rem;
+    }
+    .enter-input{
+        gap: 0rem;  
+    }
+
+    
+  }
