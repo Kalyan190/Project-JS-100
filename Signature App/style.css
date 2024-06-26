@@ -1,0 +1,67 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    
+}
+
+.canvas {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 30%;
+    
+}
+
+.top,
+.bottom {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+.block,
+input,
+select,
+button {
+    width: 80%;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom>button {
+    margin: 10px;
+}
+
+.top>.block {
+    margin: 10px;
+}
+
+.block>p {
+    margin: 10px auto;
+    width: 50%;
+}
+
+@media (max-width: 700px){
+     .top,.bottom{
+        flex-wrap: wrap;
+        width: 100%;
+     }
+   
+}
