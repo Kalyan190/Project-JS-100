@@ -1,0 +1,86 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+.wrapper{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem;
+}
+h1{
+      border: solid 2px;
+      padding: .5rem;
+      border-radius: .3rem;
+}
+
+p{
+      padding: 1rem;
+}
+
+.button-key{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      
+}
+button{
+      height: 3rem;
+      padding: 1rem;
+      cursor: pointer;
+}
+
+.keypress{
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 10%;
+      width: 100%;
+      justify-content:center;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+      font-size: larger;
+      font-weight: 600;
+}
+
+.show{
+      background-color: rgb(240, 197, 24);
+      min-height: 3rem;
+      width: 40%;
+      border-radius: .5rem;
+      border: solid 0.08rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.shows{
+      background-color: rgb(129, 128, 121);
+      min-height: 3rem;
+      width: 40%;
+      border-radius: .5rem;
+      border: solid 0.08rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+@media (max-width:600px){
+      .keypress{
+            flex-direction: column;
+      }
+      .show{
+            width: 100%;
+      }
+      .shows{
+            width: 100%;
+      }
+}
